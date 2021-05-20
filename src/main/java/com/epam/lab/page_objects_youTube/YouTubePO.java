@@ -11,7 +11,7 @@ import static com.epam.lab.singleton.DriverManager.getWait;
 public class YouTubePO extends AbstractPO {
     @FindBy(name = "q")
     private TextField searchType;
-    @FindBy(xpath = "//h2[contains(text(),'Результати веб-пошуку')]/../div/div/div/div/div/a")
+    @FindBy(xpath = "(//h3[contains(text(),'YouTube')])[1]")
     private NavigationLink youTubeItem;
     @FindBy(xpath = "//ytd-guide-entry-renderer/a[@title='Бібліотека']")
     private NavigationLink libraryItem;
