@@ -10,5 +10,6 @@ public class ApplicationBO {
         ApplicationPO applicationPO = new ApplicationPO();
         log.info("Open additional apps on YouTube page");
         applicationPO.getSearchYouTubeVideo().sendText(LVIV);
+        applicationPO.getSearchVideo().click();
     }
 }

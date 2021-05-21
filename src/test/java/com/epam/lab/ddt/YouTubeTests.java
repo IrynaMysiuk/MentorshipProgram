@@ -17,6 +17,5 @@ public class YouTubeTests extends BaseTest {
                 .openLibraryItem();
         ApplicationBO applicationBO = new ApplicationBO();
         applicationBO.openApplication();
-//        Assert.assertEquals(applicationBO.getYouTubeTVText(), "YouTube TV", "Text is incorrect");
     }
 }
