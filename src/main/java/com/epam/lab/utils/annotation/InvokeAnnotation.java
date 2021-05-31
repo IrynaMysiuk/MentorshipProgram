@@ -1,11 +1,12 @@
-package com.epam.lab.annotation;
+package com.epam.lab.utils.annotation;
 
+
+import com.epam.lab.utils.Constants;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public class InvokeAnnotation {
-   // static Logger logger = LogManager.getLogger(Demo.class.getName());
    private static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(InvokeAnnotation.class);
     @Demo.MyAnnotation(value = 10)
     public void sayHello() {
@@ -27,7 +28,7 @@ public class InvokeAnnotation {
     public void getInvoke() {
         Class<?> cls;
         try {
-            cls = Class.forName("com.epam.lab.annotation.InvokeAnnotation");
+            cls = Class.forName("com.epam.lab.utils.annotation.InvokeAnnotation");
             Method method = cls.getMethod("myMethod", String[].class);
             InvokeAnnotation ownAnnotation = new InvokeAnnotation();
             method.invoke(ownAnnotation, new Object[]{Constants.argStr});

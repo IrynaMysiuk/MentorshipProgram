@@ -1,6 +1,10 @@
-package com.epam.lab.clone;
+package com.epam.lab.utils.clone;
+
+import static com.epam.lab.utils.Constants.AGE;
+import static com.epam.lab.utils.Constants.NAME;
 
 public class CloneTest {
+
     static class Person implements Cloneable {
         String name;
         int age;
@@ -43,7 +47,7 @@ public class CloneTest {
 
     public static void main(String[] args) throws CloneNotSupportedException {
         Car car = new Car("Green");
-        Person person = new Person(car, 25, "Mike");
+        Person person = new Person(car, AGE, NAME);
 
         Person clone = (Person) person.clone();
         System.out.println(person);

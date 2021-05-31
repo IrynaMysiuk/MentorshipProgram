@@ -1,11 +1,12 @@
-package com.epam.lab.annotation;
+package com.epam.lab.utils.annotation;
+
+import com.epam.lab.utils.Constants;
 
 import java.lang.reflect.Method;
 
 public class ObjectUnknownType {
     private int age;
     private String name;
-    // static Logger logger = LogManager.getLogger(Application.class.getName());
     private static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(ObjectUnknownType.class);
 
     public String printName(String name) {
@@ -24,7 +25,7 @@ public class ObjectUnknownType {
 
     public void getUnknownType() {
         try {
-            Class<?> cls = Class.forName("com.epam.lab.annotation.ObjectUnknownType");
+            Class<?> cls = Class.forName("com.epam.lab.utils.annotation.ObjectUnknownType");
             Object obj = cls.newInstance();
             Method method = cls.getDeclaredMethod("printName", String.class);
             log.info(method.invoke(obj, new String(Constants.myName)));

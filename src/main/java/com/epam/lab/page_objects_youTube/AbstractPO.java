@@ -5,7 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import static com.epam.lab.singleton.DriverContainer.getDriver;
 
-public class AbstractPO {
+public abstract class AbstractPO {
     protected AbstractPO() {
         PageFactory.initElements(new FieldDecorator(getDriver()), this);
     }

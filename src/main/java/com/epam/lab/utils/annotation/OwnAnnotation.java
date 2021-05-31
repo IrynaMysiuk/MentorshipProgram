@@ -1,4 +1,4 @@
-package com.epam.lab.annotation;
+package com.epam.lab.utils.annotation;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -7,7 +7,6 @@ import java.lang.reflect.Modifier;
 
 public class OwnAnnotation {
     public Class<?> cls;
-    //static Logger logger = LogManager.getLogger(Application.class.getName());
     private static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(OwnAnnotation.class);
 
     OwnAnnotation(Class<?> className) {

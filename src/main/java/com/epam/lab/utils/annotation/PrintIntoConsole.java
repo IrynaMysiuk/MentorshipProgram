@@ -1,4 +1,6 @@
-package com.epam.lab.annotation;
+package com.epam.lab.utils.annotation;
+
+import com.epam.lab.utils.Constants;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -17,7 +19,6 @@ public class PrintIntoConsole {
         String city() default "";
     }
 
-    //static Logger logger = LogManager.getLogger(Application.class.getName());
     private static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(PrintIntoConsole.class);
 
     @MyAnnotationField(age = Constants.myAge, name = Constants.myName, city = Constants.myCity)

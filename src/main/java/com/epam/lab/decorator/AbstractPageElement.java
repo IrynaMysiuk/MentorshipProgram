@@ -11,7 +11,7 @@ import java.lang.reflect.Field;
 
 import static com.epam.lab.singleton.DriverManager.getWait;
 
-public class AbstractPageElement {
+public abstract class AbstractPageElement {
     protected WebElement wrappedElement;
     protected Field field;
     protected String name;

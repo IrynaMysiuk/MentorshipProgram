@@ -1,4 +1,4 @@
-package com.epam.lab.annotation;
+package com.epam.lab.utils.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -29,7 +29,7 @@ public class Demo {
         ObjectUnknownType objectUnknownType = new ObjectUnknownType();
         objectUnknownType.getUnknownType();
         log.info("--------Own Annotation----------");
-        Class<?> cls = Class.forName("com.epam.lab.annotation.OwnAnnotation");
+        Class<?> cls = Class.forName("com.epam.lab.utils.annotation.OwnAnnotation");
         OwnAnnotation ownAnnotation = new OwnAnnotation(cls);
         ownAnnotation.getClassName();
         ownAnnotation.allInfoMethods();
