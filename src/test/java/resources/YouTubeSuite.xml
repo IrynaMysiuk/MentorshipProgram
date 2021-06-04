@@ -1,11 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="YouTube Suite">
     <listeners>
-        <listener class-name="com.epam.lab.ListenerTest"/>
+        <listener class-name="com.epam.mentorshipProgram.ListenerTest"/>
     </listeners>
     <test name="Advanced Task 6 Tests">
         <classes>
-            <class name="com.epam.lab.ddt.YouTubeTests"/>
+            <class name="com.epam.mentorshipProgram.ddt.YouTubeTests"/>
         </classes>
     </test>
 </suite>
